@@ -1,0 +1,408 @@
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+   android:id="@+id/scrollView1" >
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            
+            >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/rows"
+                android:weightSum="3"
+                >
+
+                <TextView
+                    android:id="@+id/row1label"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="@string/row1label" 
+                    
+                />
+
+                <Button
+                    android:id="@+id/fb_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp" 
+                    android:layout_marginLeft="40dp"
+                    android:onClick="share"
+                    android:background="@drawable/fb_share"/>
+                
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rows" 
+                
+                >
+                <TextView
+                    android:id="@+id/addresslink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    
+                    />
+           
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/rows2" android:weightSum="2"
+                >
+                <TextView
+                    android:id="@+id/proplabel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Property Type" />
+                <TextView
+                    android:id="@+id/property"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    />
+            </TableRow>
+			<TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/rows" android:weightSum="2"
+                >
+                <TextView
+                    android:id="@+id/yearbuiltlabel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Year Built" />
+                <TextView
+                    android:id="@+id/yearbuilt"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/rows2" android:weightSum="2"
+                >
+                <TextView
+                    android:id="@+id/lotsizelabel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Lot Size" />
+                <TextView
+                    android:id="@+id/lotsize"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    />
+            </TableRow><TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/rows" android:weightSum="2"
+                >
+                <TextView
+                    android:id="@+id/finarealabel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Finished Area" />
+                <TextView
+                    android:id="@+id/finarea"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    />
+            </TableRow><TableRow
+                android:id="@+id/tableRow7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/rows2" android:weightSum="2"
+                >
+                <TextView
+                    android:id="@+id/nbathlabel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Bathrooms" />
+                <TextView
+                    android:id="@+id/nbath"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    />
+            </TableRow><TableRow
+                android:id="@+id/tableRow8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/rows" android:weightSum="2"
+                >
+                <TextView
+                    android:id="@+id/nbedlabel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Bedrooms" />
+                <TextView
+                    android:id="@+id/nbed"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    />
+            </TableRow><TableRow
+                android:id="@+id/tableRow9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/rows2" android:weightSum="2"
+                >
+                <TextView
+                    android:id="@+id/taxyearlabel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Tax Assessment Year" />
+                <TextView
+                    android:id="@+id/taxyear"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    />
+            </TableRow><TableRow
+                android:id="@+id/tableRow10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/rows" android:weightSum="2"
+                >
+                <TextView
+                    android:id="@+id/taxamtlabel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Tax Assessment" />
+                <TextView
+                    android:id="@+id/taxamt"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    />
+            </TableRow><TableRow
+                android:id="@+id/tableRow11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/rows2" android:weightSum="2"
+                >
+                <TextView
+                    android:id="@+id/lsplabel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Last Sold Price" />
+                <TextView
+                    android:id="@+id/lsp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    />
+            </TableRow><TableRow
+                android:id="@+id/tableRow12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/rows" android:weightSum="2"
+                >
+                <TextView
+                    android:id="@+id/lsdlabel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Last Sold Date" />
+                <TextView
+                    android:id="@+id/lsd"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    />
+            </TableRow><TableRow
+                android:id="@+id/tableRow13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/rows2" android:weightSum="2"
+                >
+                <TextView
+                    android:id="@+id/zestimatelabel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    />
+                <TextView
+                    android:id="@+id/zestimate"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    />
+            </TableRow><TableRow
+                android:id="@+id/tableRow14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/rows" android:weightSum="2"
+                >
+                <TextView
+                    android:id="@+id/valuechangelabel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="30 Days Overall Change" />
+                <TextView
+                    android:id="@+id/valuechange"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    />
+            </TableRow><TableRow
+                android:id="@+id/tableRow15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/rows2" android:weightSum="2"
+                >
+                <TextView
+                    android:id="@+id/propchangelabel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="All Time Property Change" />
+                <TextView
+                    android:id="@+id/propchange"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    />
+            </TableRow><TableRow
+                android:id="@+id/tableRow16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/rows" android:weightSum="2"
+                >
+                <TextView
+                    android:id="@+id/rentzestimatelabel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                     />
+                <TextView
+                    android:id="@+id/rentzestimate"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/rows2" android:weightSum="2"
+                >
+                <TextView
+                    android:id="@+id/rentchangelabel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="30 Days Rent Change" />
+                <TextView
+                    android:id="@+id/rentchange"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/rows" android:weightSum="2"
+                >
+                <TextView
+                    android:id="@+id/alltimerentchangelabel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="All Time Rent Change" />
+                <TextView
+                    android:id="@+id/alltimerentchange"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="50dp"
+                    />
+            </TableRow>
+        </TableLayout>
+		
+    </ScrollView>
+<RelativeLayout
+    
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="#F5F5F5"
+    android:gravity="center" >
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="40dp"
+      android:id="@+id/footer"
+      android:textColor="#000"
+      
+      android:textSize="12sp" />
+    </RelativeLayout>
+  </RelativeLayout>
